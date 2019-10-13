@@ -6,8 +6,13 @@ import AlarmClockControl from './AlarmClockControl';
 import Form from './Form';
 import FormRef from './FormRef';
 import CssStyleTest from './CssStyleTest';
-
-import App from './App';
+import PropType from './PropType';
+import ErrorBoundary from './ErrorBoundary';
+import ErrorCounter from './ErrorCounter';
+import StateDiff from './StateDiff';
+import Axios from './Axios';
+import Fetch from './Fetch';
+// import App from './App';
 import {
     BrowserRouter as Router,
     Route,
@@ -19,7 +24,36 @@ import * as serviceWorker from './serviceWorker';
 //ReactDOM.render(<App />, document.getElementById('root'));
 //ReactDOM.render(<Form />, document.getElementById('root'));
 // ReactDOM.render(<FormRef />, document.getElementById('root'));
-ReactDOM.render(<CssStyleTest />, document.getElementById('root'));
+//eactDOM.render(<CssStyleTest />, document.getElementById('root'));
+
+// ReactDOM.render(
+//     <PropType name={"john"} age={"23"} gender="men" /> ,
+//     document.getElementById('root'));
+ 
+// ReactDOM.render(
+//     <PropType name={"john"} age={23} gender="male" /> ,
+//     document.getElementById('root'));
+ 
+// const App = () => (
+//     <div>
+//       <ErrorBoundary>        <ErrorCounter />
+//       </ErrorBoundary>      <ErrorBoundary>        <ErrorCounter action={"handleClick"} />      </ErrorBoundary>
+//     </div>)
+//     ReactDOM.render(        <App /> ,        document.getElementById('root'));
+
+//ReactDOM.render(  <StateDiff /> , document.getElementById('root'));
+const App = () => (
+    <div>
+      <h1>Fetch</h1>
+      <Fetch />
+      <h1>Axios</h1>
+      <Axios />
+    </div>
+  )
+  
+  ReactDOM.render(
+    <App />,
+    document.getElementById('root'));
 // const Repos = () => (
 //     <div>
 //       <h2>Repos</h2>
