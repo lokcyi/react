@@ -4,8 +4,13 @@
   "private": true,
   "dependencies": {
     "react": "^16.10.2",
+    "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "register-service-worker": "^1.6.2",
+    "styled-components": "^4.4.0",
+    "typescript": "^3.6.4"
   },
   "scripts": {
     "start": "react-scripts start",
